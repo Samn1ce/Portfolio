@@ -34,18 +34,18 @@ onMounted(() => {
 </script>
 
 <template>
-  <main class="bg-bgColor w-full min-h-screen flex flex-col justify-between items-center gap-4 py-3 bg-dark-about">
-    <Header />
-    <div class="max-w-7xl w-9/12 lg:max-h-xl font-poppins">
-      <div class="self-section">
-        <Self />
-      </div>
-      <div class="about-section">
-        <About />
-      </div>
-      <div class="credentials-section">
-        <Credentials />
-      </div>
-    </div>
-  </main>
+    <main class="bg-bgColor w-full min-h-screen flex flex-col justify-between items-center gap-4 py-3 bg-dark-about">
+        <Header />
+        <div class="w-[90%] sm:max-w-7xl sm:w-9/12 lg:max-h-xl font-poppins">
+            <div class="self-section">
+                <Self />
+            </div>
+            <div class="about-section">
+                <About />
+            </div>
+            <div class="credentials-section">
+                <Credentials />
+            </div>
+        </div>
+    </main>
 </template>

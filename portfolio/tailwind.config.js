@@ -21,7 +21,10 @@ export default {
         'xl': '600px'
       },
       textColor: {
-        'detail': '#4A4A4A'
+        'detail': '#4A4A4A',
+        'js': '#EFD81D',
+        'react': '#61DAFB',
+        'vue': '#41B883'
       },
       fontSize: {
         'xxs': '10px'

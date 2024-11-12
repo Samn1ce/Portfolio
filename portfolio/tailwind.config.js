@@ -10,17 +10,28 @@ export default {
         'bgColor': '#101010'
       },
       backgroundImage: {
-        'gradient': 'linear-gradient(to right, #191919, #141414)',
+        'gradient': 'linear-gradient(to bottom right, #191919, #101010, #050505, #020202)',
+        "dark-about": "linear-gradient(300deg, rgb(0, 0, 0) 40%, rgb(0, 26, 67) 20%, rgb(0, 26, 67) 10%, rgb(0, 0, 0) 45%, rgb(0, 0, 0) 100%)",
       },
       height: {
         '37': '37%',
         '25': '24%',
       },
       maxHeight: {
-        'xl': '576px'
+        'xl': '600px'
       },
       textColor: {
         'detail': '#4A4A4A'
+      },
+      fontSize: {
+        'xxs': '10px'
+      },
+      width: {
+        '45': '45%'
+      },
+      fontFamily: {
+        edu: ['"Edu AU VIC WA NT Pre"', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
       }
     },
   },

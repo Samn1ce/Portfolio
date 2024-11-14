@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <section class="w-full lg:h-56 flex sm:flex-row md:justify-center gap-4 mb-3 text-white">
+    <section class="w-full lg:h-56 flex sm:flex-row md:justify-center gap-4 mb-3 text-zinc-100">
             <div class="sm:w-1/3 rounded-xl bg-gradient hidden sm:block relative">
                 <Transition name="purple">
                     <div class="w-1/4 h-[2px] absolute top-0 rounded-full bg-gradient-to-l from-purple-800 to-[#191919] purple-enter-active opacity-0"></div>

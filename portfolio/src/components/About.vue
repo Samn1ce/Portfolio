@@ -4,7 +4,7 @@
 </script>
 
 <template>
-    <section class="w-full md:h-52 flex flex-col sm:flex-row gap-4 mb-3 text-white">
+    <section class="w-full md:h-52 flex flex-col sm:flex-row gap-4 mb-3 text-zinc-100">
         <div class="w-full md:w-1/2 rounded-xl p-3 text-xs font-semibold flex flex-col justify-between bg-gradient gap-4 md:gap-0">
             <h3>EXPERIENCE</h3>
             <div v-for="data in ExpData">

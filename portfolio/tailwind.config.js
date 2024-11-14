@@ -11,6 +11,7 @@ export default {
       },
       backgroundImage: {
         'gradient': 'linear-gradient(to bottom right, #191919, #101010, #050505, #020202)',
+        'gradientModal': 'linear-gradient(to top left, #191919, #101010, #050505, #020202)',
         "dark-about": "linear-gradient(300deg, rgb(0, 0, 0) 40%, rgb(0, 26, 67) 20%, rgb(0, 26, 67) 10%, rgb(0, 0, 0) 45%, rgb(0, 0, 0) 100%)",
       },
       height: {

@@ -1,0 +1,18 @@
+[
+    { 
+        "icon": "Twitter", 
+        "href": "https://x.com/IfeoluwaSamnice" 
+    },
+    { 
+        "icon": "LinkedIn", 
+        "href": "https://www.linkedin.com/in/ifeoluwa-babatunde-9036b7288/" 
+    },
+    { 
+        "icon": "Mail", 
+        "href": "mailto:iamsamnice@gmail.com" 
+    },
+    { 
+        "icon": "Github", 
+        "href": "https://github.com/Samn1ce" 
+    }
+]

@@ -1,0 +1,10 @@
+[
+    {
+        "year": "2022-2024",
+        "project": "Real-life Projects",
+        "lang": [
+                    { "name": "VUE", "color": "#41B883" },
+                    { "name": "React", "color": "#61DAFB" }
+                ]
+    }
+]

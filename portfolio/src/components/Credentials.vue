@@ -1,7 +1,5 @@
 <script setup>
 import { ref, watch, onMounted, onBeforeUnmount } from 'vue'
-// import { Twitter, Linkedin, Mail, Github } from "lucide-vue-next";
-// import SocialLinks from "../assets/SocialLinks.json";
 import Twitter from './icons/IconTwitter.vue'
 import LinkedIn from './icons/IconLinkedIn.vue'
 import GitHub from './icons/IconGitHub.vue'
@@ -11,6 +9,7 @@ import Vue from './icons/IconVue.vue'
 import React from './icons/IconReact.vue'
 import Tailwind from './icons/IconTailwind.vue'
 import JS from './icons/IconJavascript.vue'
+import Close from './icons/IconClose.vue'
 import gsap from 'gsap'
 
 const henry = ref(false)
@@ -92,6 +91,8 @@ onBeforeUnmount(() => {
 	// Clean up any remaining animations
 	gsap.killTweensOf(['.current-icon', '.next-icon'])
 })
+
+const viewProject = ref(false)
 </script>
 
 <template>
@@ -156,13 +157,25 @@ onBeforeUnmount(() => {
 			</div>
 		</div>
 		<div
-			class="w-45 md:w-1/4 rounded-xl flex justify-between items-end p-3 bg-gradient md:order-last"
+			:class="[
+				'rounded-xl p-3 md:order-last transition-all duration-500',
+				viewProject
+					? 'bg-gradient w-full absolute right-0 top-0 z-10 h-full flex justify-between items-start'
+					: 'w-45 md:w-1/4 flex justify-between items-end bg-gradient transition-all duration-500',
+			]"
 		>
 			<div>
 				<p class="text-xxs text-detail font-semibold">More About Me</p>
-				<p class="font-semibold text-xs sm:text-base">Credentials</p>
+				<p class="font-semibold text-xs sm:text-base">Projects</p>
 			</div>
-			<Enter class="w-4 h-4 sm:w-7 sm:h-7 cursor-pointer" />
+			<div>
+				<Enter
+					v-if="!viewProject"
+					@click="viewProject = !viewProject"
+					class="w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+				/>
+				<Close v-else @click="viewProject = !viewProject" />
+			</div>
 		</div>
 	</section>
 </template>

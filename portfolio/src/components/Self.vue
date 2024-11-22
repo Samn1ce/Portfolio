@@ -32,7 +32,7 @@ import Asterics from './icons/IconAsterics.vue'
 			<div
 				class="w-full h-full flex justify-center items-center overflow-hidden rounded-xl"
 			>
-				<img class="rounded-xl opacity-50" src="/images/pfp.png" />
+				<img class="rounded-xl opacity-50" src="/pfp.png" />
 			</div>
 		</div>
 		<div

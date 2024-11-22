@@ -1,0 +1,38 @@
+[
+	{
+		"id": 1,
+		"img": "EASYBANK.png",
+		"name": "Easybank",
+		"link": ""
+	},
+	{
+		"id": 2,
+		"img": "SHORTLY.png",
+		"name": "Shortly",
+		"link": ""
+	},
+	{
+		"id": 3,
+		"img": "EASYBANK.png",
+		"name": "Easybank",
+		"link": ""
+	},
+	{
+		"id": 4,
+		"img": "SHORTLY.png",
+		"name": "Shortly",
+		"link": ""
+	},
+	{
+		"id": 5,
+		"img": "EASYBANK.png",
+		"name": "Easybank",
+		"link": ""
+	},
+	{
+		"id": 6,
+		"img": "SHORTLY.png",
+		"name": "Shortly",
+		"link": ""
+	}
+]

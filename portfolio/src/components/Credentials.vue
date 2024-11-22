@@ -1,5 +1,6 @@
 <script setup>
 import { ref, watch, onMounted, onBeforeUnmount } from 'vue'
+// ICONS IMPORT
 import Twitter from './icons/IconTwitter.vue'
 import LinkedIn from './icons/IconLinkedIn.vue'
 import GitHub from './icons/IconGitHub.vue'
@@ -10,8 +11,13 @@ import React from './icons/IconReact.vue'
 import Tailwind from './icons/IconTailwind.vue'
 import JS from './icons/IconJavascript.vue'
 import Close from './icons/IconClose.vue'
+import Arrow from './icons/IconArrow.vue'
+// GSAP IMPORT
 import gsap from 'gsap'
+// DATA FILES IMPORT
+import Projects from '../assets/Projects.json'
 
+// ANIMATION JS
 const henry = ref(false)
 
 watch(henry, (newVal) => {
@@ -92,7 +98,9 @@ onBeforeUnmount(() => {
 	gsap.killTweensOf(['.current-icon', '.next-icon'])
 })
 
+// REF STATE VALUES
 const viewProject = ref(false)
+const isHovered = ref(null)
 </script>
 
 <template>
@@ -210,25 +218,41 @@ const viewProject = ref(false)
 						]"
 					>
 						<div
+							v-for="project in Projects"
+							:key="project.id"
 							v-if="viewProject"
-							class="border-blue-800 border w-full md:w-2/5 min-h-[150px] md:min-h-0 md:h-20 rounded-lg mb-4 md:mb-0 flex-shrink-0"
-						></div>
-						<div
-							v-if="viewProject"
-							class="border-blue-800 border w-full md:w-2/5 min-h-[150px] md:min-h-0 md:h-20 rounded-lg mb-4 md:mb-0 flex-shrink-0"
-						></div>
-						<div
-							v-if="viewProject"
-							class="border-blue-800 border w-full md:w-2/5 min-h-[150px] md:min-h-0 md:h-20 rounded-lg mb-4 md:mb-0 flex-shrink-0"
-						></div>
-						<div
-							v-if="viewProject"
-							class="border-blue-800 border w-full md:w-2/5 min-h-[150px] md:min-h-0 md:h-20 rounded-lg mb-4 md:mb-0 flex-shrink-0"
-						></div>
-						<div
-							v-if="viewProject"
-							class="border-blue-800 border w-full md:w-2/5 min-h-[150px] md:min-h-0 md:h-20 rounded-lg mb-4 md:mb-0 flex-shrink-0"
-						></div>
+							@mouseover="isHovered = project.id"
+							@mouseleave="isHovered = null"
+							class="w-full md:w-2/5 md:min-h-0 md:h-20 rounded-lg mb-4 md:mb-0 flex-shrink-0 overflow-hidden"
+						>
+							<div class="w-full h-full relative">
+								<div
+									v-if="isHovered === project.id"
+									:class="[
+										'absolute z-50 transition-all cursor-pointer w-12 h-12 p-1 flex justify-center items-center rounded-full border-red-500 border left-1/2 top-0 -translate-x-1/2 translate-y-1/2 opacity-0',
+										isHovered === project.id
+											? '-translate-y-1/2 top-1/2 opacity-100 transition-all'
+											: 'translate-y-1/2 transition-all',
+									]"
+								>
+									<div
+										class="bg-red-500 w-full h-full rounded-full flex justify-center items-center"
+									>
+										<Arrow />
+									</div>
+								</div>
+								<img
+									:class="[
+										'w-full h-full z-10 transition-all',
+										isHovered === project.id
+											? 'opacity-35'
+											: '',
+									]"
+									:src="project.img"
+									:alt="project.name || 'Project image'"
+								/>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

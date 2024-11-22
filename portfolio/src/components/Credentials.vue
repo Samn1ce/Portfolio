@@ -164,23 +164,117 @@ const viewProject = ref(false)
 					: 'w-45 md:w-1/4 flex justify-between items-end bg-gradient transition-all duration-500',
 			]"
 		>
-			<div>
-				<p class="text-xxs text-detail font-semibold">More About Me</p>
-				<p class="font-semibold text-xs sm:text-base">Projects</p>
-			</div>
-			<div>
-				<Enter
-					v-if="!viewProject"
-					@click="viewProject = !viewProject"
-					class="w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
-				/>
-				<Close v-else @click="viewProject = !viewProject" />
+			<div class="w-full h-full">
+				<div
+					:class="[
+						'flex md:justify-between w-full h-full flex-col', // Added flex-col
+						viewProject ? 'items-start' : 'items-end',
+					]"
+				>
+					<div
+						:class="[
+							'flex w-full',
+							viewProject
+								? 'justify-between'
+								: 'h-full items-end',
+						]"
+					>
+						<div class="flex justify-between items-end w-full">
+							<div>
+								<p class="text-xxs text-detail font-semibold">
+									More About Me
+								</p>
+								<p class="font-semibold text-xs sm:text-base">
+									Projects
+								</p>
+							</div>
+							<div>
+								<Enter
+									v-if="!viewProject"
+									@click="viewProject = !viewProject"
+									class="w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
+								/>
+								<Close
+									class=""
+									v-else
+									@click="viewProject = !viewProject"
+								/>
+							</div>
+						</div>
+					</div>
+					<div
+						:class="[
+							viewProject
+								? 'flex flex-col md:flex-row md:gap-4 h-[calc(100%-60px)] md:h-[calc(100%-0px)] overflow-y-auto md:overflow-x-auto md:overflow-y-hidden w-full custom-scrollbar'
+								: '',
+						]"
+					>
+						<div
+							v-if="viewProject"
+							class="border-blue-800 border w-full md:w-2/5 min-h-[150px] md:min-h-0 md:h-20 rounded-lg mb-4 md:mb-0 flex-shrink-0"
+						></div>
+						<div
+							v-if="viewProject"
+							class="border-blue-800 border w-full md:w-2/5 min-h-[150px] md:min-h-0 md:h-20 rounded-lg mb-4 md:mb-0 flex-shrink-0"
+						></div>
+						<div
+							v-if="viewProject"
+							class="border-blue-800 border w-full md:w-2/5 min-h-[150px] md:min-h-0 md:h-20 rounded-lg mb-4 md:mb-0 flex-shrink-0"
+						></div>
+						<div
+							v-if="viewProject"
+							class="border-blue-800 border w-full md:w-2/5 min-h-[150px] md:min-h-0 md:h-20 rounded-lg mb-4 md:mb-0 flex-shrink-0"
+						></div>
+						<div
+							v-if="viewProject"
+							class="border-blue-800 border w-full md:w-2/5 min-h-[150px] md:min-h-0 md:h-20 rounded-lg mb-4 md:mb-0 flex-shrink-0"
+						></div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
 </template>
 
 <style scoped>
+/* For Webkit browsers (Chrome, Safari) */
+.custom-scrollbar::-webkit-scrollbar {
+	height: 4px;
+	width: 4px;
+	transition: all 10s;
+	display: none; /* Hide by default */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+	background: rgba(255, 255, 255, 0.5);
+}
+
+/* Show scrollbar on hover */
+.custom-scrollbar:hover::-webkit-scrollbar {
+	display: block;
+	transition: all 10s;
+}
+
+/* For Firefox */
+.custom-scrollbar {
+	scrollbar-width: none; /* Hide by default */
+}
+
+.custom-scrollbar:hover {
+	scrollbar-width: thin;
+	scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+}
+
+/* Keep your existing styles */
 .slideshow-container {
 	position: relative;
 }

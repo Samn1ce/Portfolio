@@ -195,7 +195,7 @@ const viewProject = ref(false)
 									class="w-4 h-4 sm:w-7 sm:h-7 cursor-pointer"
 								/>
 								<Close
-									class=""
+									class="cursor-pointer"
 									v-else
 									@click="viewProject = !viewProject"
 								/>

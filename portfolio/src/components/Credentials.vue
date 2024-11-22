@@ -205,7 +205,7 @@ const viewProject = ref(false)
 					<div
 						:class="[
 							viewProject
-								? 'flex flex-col md:flex-row md:gap-4 h-[calc(100%-60px)] md:h-[calc(100%-0px)] overflow-y-auto md:overflow-x-auto md:overflow-y-hidden w-full custom-scrollbar'
+								? 'flex flex-col md:flex-row md:gap-4 h-[calc(100%-50px)] md:h-[calc(100%-0px)] overflow-y-auto md:overflow-x-auto md:overflow-y-hidden w-full mt-2 md:mt-0 custom-scrollbar'
 								: '',
 						]"
 					>
@@ -241,7 +241,6 @@ const viewProject = ref(false)
 .custom-scrollbar::-webkit-scrollbar {
 	height: 4px;
 	width: 4px;
-	transition: all 10s;
 	display: none; /* Hide by default */
 }
 
@@ -261,7 +260,6 @@ const viewProject = ref(false)
 /* Show scrollbar on hover */
 .custom-scrollbar:hover::-webkit-scrollbar {
 	display: block;
-	transition: all 10s;
 }
 
 /* For Firefox */

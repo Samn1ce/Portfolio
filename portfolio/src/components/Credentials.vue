@@ -228,11 +228,12 @@ const isHovered = ref(null)
 							<div class="w-full h-full relative">
 								<div
 									v-if="isHovered === project.id"
+									v-show="isHovered === project.id"
 									:class="[
-										'absolute z-50 transition-all cursor-pointer w-12 h-12 p-1 flex justify-center items-center rounded-full border-red-500 border left-1/2 top-0 -translate-x-1/2 translate-y-1/2 opacity-0',
+										'absolute z-50 transition-all ease-in duration-700 cursor-pointer w-12 h-12 p-1 flex justify-center items-center rounded-full border-red-500 border transform left-1/2 -translate-x-1/2 top-1/2',
 										isHovered === project.id
-											? '-translate-y-1/2 top-1/2 opacity-100 transition-all'
-											: 'translate-y-1/2 transition-all',
+											? '-translate-y-1/2 opacity-100'
+											: 'translate-y-full opacity-0',
 									]"
 								>
 									<div

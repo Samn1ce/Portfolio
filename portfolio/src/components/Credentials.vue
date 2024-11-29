@@ -9,6 +9,7 @@ import Enter from './icons/IconEnter.vue'
 import Vue from './icons/IconVue.vue'
 import React from './icons/IconReact.vue'
 import Tailwind from './icons/IconTailwind.vue'
+import TS from './icons/IconTypescript.vue'
 import JS from './icons/IconJavascript.vue'
 import Close from './icons/IconClose.vue'
 import Arrow from './icons/IconArrow.vue'
@@ -39,7 +40,7 @@ watch(henry, (newVal) => {
 
 // Array of icons for the slideshow
 // Icons array and state management for slideshow
-const icons = [Vue, React, Tailwind, JS]
+const icons = [Vue, React, Tailwind, JS, TS]
 const currentIconIndex = ref(0)
 const nextIconIndex = ref(1)
 let intervalId

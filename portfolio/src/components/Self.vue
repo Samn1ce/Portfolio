@@ -62,8 +62,9 @@ import Asterics from './icons/IconAsterics.vue'
 						<span class="text-blue-400">Tailwind CSS</span>,
 						<span class="text-js">Javascript</span>,
 						<span class="text-react">React</span>,
-						<span class="text-vue">VUE</span>. I'm a big fan of
-						COMPUTER and Gaming. When i was younger i preferred
+						<span class="text-vue">VUE</span>,
+						<span class="text-ts">Typescript</span>. I'm a big fan
+						of COMPUTER and Gaming. When i was younger i preferred
 						computer to any other gadget and i've always wanted to
 						know how things worked underground. I do say till now,
 						if i'm to choose one i would pick a COMPUTER over a

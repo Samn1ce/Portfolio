@@ -3,36 +3,31 @@
 		"id": 1,
 		"img": "EASYBANK.png",
 		"name": "Easybank",
-		"link": ""
+		"link": "https://easybank-two-blush.vercel.app/",
+		"lang": [
+			{ "name": "Tailwind", "color": "#60a5fa" },
+			{ "name": "React", "color": "#61DAFB" }
+		]
 	},
 	{
 		"id": 2,
 		"img": "SHORTLY.png",
 		"name": "Shortly",
-		"link": ""
+		"link": "",
+		"lang": [
+			{ "name": "Tailwind", "color": "#60a5fa" },
+			{ "name": "VUE", "color": "#41B883" },
+			{ "name": "API", "color": "#ffffff" }
+		]
 	},
 	{
 		"id": 3,
 		"img": "RPS.png",
 		"name": "Rock, Paper, Scissors",
-		"link": ""
-	},
-	{
-		"id": 4,
-		"img": "SHORTLY.png",
-		"name": "Shortly",
-		"link": ""
-	},
-	{
-		"id": 5,
-		"img": "EASYBANK.png",
-		"name": "Easybank",
-		"link": ""
-	},
-	{
-		"id": 6,
-		"img": "SHORTLY.png",
-		"name": "Shortly",
-		"link": ""
+		"link": "https://rps-iota-one.vercel.app/",
+		"lang": [
+			{ "name": "VUE", "color": "#41B883" },
+			{ "name": "Tailwind", "color": "#60a5fa" }
+		]
 	}
 ]

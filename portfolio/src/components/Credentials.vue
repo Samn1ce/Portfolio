@@ -102,6 +102,13 @@ onBeforeUnmount(() => {
 // REF STATE VALUES
 const viewProject = ref(false)
 const isHovered = ref(null)
+
+// FUNCTION TO OPEN PROJECT LINKS
+const openProjectLink = (link) => {
+	if (link) {
+		window.open(link, '_blank')
+	}
+}
 </script>
 
 <template>
@@ -227,9 +234,29 @@ const isHovered = ref(null)
 							class="w-full md:w-2/5 md:min-h-0 md:h-20 rounded-lg mb-4 md:mb-0 flex-shrink-0 overflow-hidden"
 						>
 							<div class="w-full h-full relative">
+								<p
+									class="absolute text-xs transform left-1/2 -translate-x-1/2 font-bold"
+								>
+									<span
+										v-if="isHovered === project.id"
+										v-show="isHovered === project.id"
+										v-for="(language, i) in project.lang"
+										:key="i"
+										:style="{ color: language.color }"
+									>
+										{{ language.name }}
+										<span
+											v-if="i < project.lang.length - 1"
+											class="text-white"
+											>, &nbsp;
+										</span>
+									</span>
+								</p>
 								<div
+									@click="openProjectLink(project.link)"
 									v-if="isHovered === project.id"
 									v-show="isHovered === project.id"
+									target="_blank"
 									:class="[
 										'absolute z-50 transition-all ease-in duration-700 cursor-pointer w-12 h-12 p-1 flex justify-center items-center rounded-full border-red-500 border transform left-1/2 -translate-x-1/2 top-1/2',
 										isHovered === project.id
@@ -247,7 +274,7 @@ const isHovered = ref(null)
 									:class="[
 										'w-full h-full z-10 transition-all',
 										isHovered === project.id
-											? 'opacity-35'
+											? 'opacity-25'
 											: '',
 									]"
 									:src="project.img"

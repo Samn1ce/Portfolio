@@ -27,7 +27,18 @@
 		"link": "https://rps-iota-one.vercel.app/",
 		"lang": [
 			{ "name": "VUE", "color": "#41B883" },
-			{ "name": "Tailwind", "color": "#60a5fa" }
+			{ "name": "Tailwind", "color": "#60a5fa" },
+			{ "name": "Typescript", "color": "#3178c6" }
+		]
+	},
+	{
+		"id": 4,
+		"img": "YAPSVILLE.png",
+		"name": "Multi Step Form",
+		"link": "https://rps-iota-one.vercel.app/",
+		"lang": [
+			{ "name": "Tailwind", "color": "#60a5fa" },
+			{ "name": "React", "color": "#61DAFB" }
 		]
 	}
 ]

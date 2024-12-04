@@ -235,7 +235,7 @@ const openProjectLink = (link) => {
 						>
 							<div class="w-full h-full relative">
 								<p
-									class="absolute text-xs transform left-1/2 -translate-x-1/2 font-bold"
+									class="absolute text-xs transform left-1/2 -translate-x-1/2 font-bold w-full flex justify-center"
 								>
 									<span
 										v-if="isHovered === project.id"

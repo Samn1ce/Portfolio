@@ -13,7 +13,7 @@
 		"id": 2,
 		"img": "SHORTLY.png",
 		"name": "Shortly",
-		"link": "",
+		"link": "shorrttly.vercel.app",
 		"lang": [
 			{ "name": "Tailwind", "color": "#60a5fa" },
 			{ "name": "VUE", "color": "#41B883" },

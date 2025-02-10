@@ -6,7 +6,8 @@
 		"link": "https://easybank-two-blush.vercel.app/",
 		"lang": [
 			{ "name": "Tailwind", "color": "#60a5fa" },
-			{ "name": "React", "color": "#61DAFB" }
+			{ "name": "React", "color": "#61DAFB" },
+			{ "name": "Javascript", "color": "#F7DF1E" }
 		]
 	},
 	{
@@ -17,7 +18,8 @@
 		"lang": [
 			{ "name": "Tailwind", "color": "#60a5fa" },
 			{ "name": "VUE", "color": "#41B883" },
-			{ "name": "API", "color": "#ffffff" }
+			{ "name": "API", "color": "#ffffff" },
+			{ "name": "Javascript", "color": "#F7DF1E" }
 		]
 	},
 	{
@@ -38,7 +40,19 @@
 		"link": "https://multi-step-form-six-lemon.vercel.app/",
 		"lang": [
 			{ "name": "Tailwind", "color": "#60a5fa" },
-			{ "name": "React", "color": "#61DAFB" }
+			{ "name": "React", "color": "#61DAFB" },
+			{ "name": "Javascript", "color": "#F7DF1E" }
+		]
+	},
+	{
+		"id": 5,
+		"img": "FINANCE.png",
+		"name": "Finance",
+		"link": "https://finance-three-bay.vercel.app/",
+		"lang": [
+			{ "name": "Tailwind", "color": "#60a5fa" },
+			{ "name": "React", "color": "#61DAFB" },
+			{ "name": "Javascript", "color": "#F7DF1E" }
 		]
 	}
 ]

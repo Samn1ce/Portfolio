@@ -19,11 +19,11 @@ import gsap from 'gsap'
 import Projects from '../assets/Projects.json'
 
 // ANIMATION JS
-const henry = ref(false)
+const showSocials = ref(false)
 
-watch(henry, (newVal) => {
+watch(showSocials, (newVal) => {
 	if (newVal) {
-		// Run GSAP animation when `henry` is true
+		// Run GSAP animation when `showSocials` is true
 		gsap.fromTo(
 			'.social-link',
 			{ opacity: 0, y: 20 }, // Start state
@@ -139,11 +139,14 @@ const openProjectLink = (link) => {
 					<p>Lets</p>
 					<p>Work <span class="text-blue-500">Together.</span></p>
 				</div>
-				<Enter @click="henry = !henry" class="w-7 h-7 cursor-pointer" />
+				<Enter
+					@click="showSocials = !showSocials"
+					class="w-7 h-7 cursor-pointer"
+				/>
 			</div>
 			<div
-				@click="henry = !henry"
-				v-show="henry"
+				@click="showSocials = !showSocials"
+				v-show="showSocials"
 				class="absolute w-full h-full rounded-xl backdrop-blur-sm flex justify-center items-center gap-8"
 			>
 				<a

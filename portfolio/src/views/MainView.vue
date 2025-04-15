@@ -43,12 +43,12 @@ onMounted(() => {
 			<div class="self-section">
 				<Self />
 			</div>
-			<div class="about-section">
+			<!-- <div class="about-section">
 				<About />
 			</div>
 			<div class="credentials-section">
 				<Credentials />
-			</div>
+			</div> -->
 		</div>
 		<Footer />
 	</main>

@@ -1,5 +1,7 @@
 <template>
-	<div class="w-4/6 h-16 flex items-center justify-between px-10">
+	<div
+		class="md:w-4/6 h-16 hidden md:flex items-center justify-between px-10"
+	>
 		<!-- <h1
 			class="bg-gradient-to-r from-blue-600 to-blue-300 text-transparent bg-clip-text"
 		>

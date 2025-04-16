@@ -78,7 +78,7 @@ import Asterics from './icons/IconAsterics.vue'
 	</section> -->
 
 	<div
-		class="md:pt-20 pt-10 md:mt-10 w-full mx-auto max-w-5xl bg-white rounded-t-xl lg:px-28 px-5 p-4 shadow-md"
+		class="md:pt-20 pt-10 md:mt-10 w-full mx-auto max-w-7xl rounded-t-xl lg:px-28 px-5 p-4"
 	>
 		<div>
 			<h1 class="font-bold text-3xl md:text-4xl">

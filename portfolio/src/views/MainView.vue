@@ -3,7 +3,7 @@ import { ref, onMounted } from 'vue'
 import Header from '../components/Header.vue'
 import Self from '../components/Self.vue'
 import Footer from '../components/Footer.vue'
-import { gsap } from 'gsap'
+import gsap from 'gsap'
 import MyProjects from '@/components/MyProjects.vue'
 
 const isDark = ref(false)

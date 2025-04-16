@@ -1,11 +1,24 @@
 <template>
-	<div
-		class="font-edu w-full h-16 flex items-center justify-center text-3xl font-semibold"
-	>
-		<h1
+	<div class="w-4/6 h-16 flex items-center justify-between px-10">
+		<!-- <h1
 			class="bg-gradient-to-r from-blue-600 to-blue-300 text-transparent bg-clip-text"
 		>
 			Samnice
-		</h1>
+		</h1> -->
+
+		<div
+			class="h-10 w-10 border-2 border-red-500 rounded-full shadow-lg"
+		></div>
+
+		<div
+			class="bg-white border-2 border-red-500 flex py-2 px-5 rounded-full gap-4 font-semibold shadow-lg"
+		>
+			<p>Home</p>
+			<p>Project</p>
+			<p>Contact</p>
+		</div>
+		<div
+			class="h-10 w-10 border-2 border-red-500 rounded-full shadow-lg"
+		></div>
 	</div>
 </template>

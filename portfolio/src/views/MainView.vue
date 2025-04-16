@@ -6,6 +6,7 @@ import About from '../components/About.vue'
 import Credentials from '../components/Credentials.vue'
 import Footer from '../components/Footer.vue'
 import gsap from 'gsap'
+import MyProjects from '@/components/MyProjects.vue'
 
 onMounted(() => {
 	// Select all main content sections
@@ -36,13 +37,12 @@ onMounted(() => {
 
 <template>
 	<main
-		class="bg-bgColor w-full min-h-screen flex flex-col justify-between border-red items-center gap-4 pt-3 bg-dark-about"
+		class="bg-bgColor w-full min-h-screen flex flex-col justify-between items-center gap-4 bg-zinc-200"
 	>
 		<Header />
-		<div class="w-[90%] sm:max-w-7xl sm:w-3/5 lg:max-h-xl font-poppins">
-			<div class="self-section">
-				<Self />
-			</div>
+		<div class="w-[90%] sm:max-w-7xl sm:w-3/5 font-poppins">
+			<Self />
+			<MyProjects />
 			<!-- <div class="about-section">
 				<About />
 			</div>

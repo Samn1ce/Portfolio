@@ -41,9 +41,11 @@ watch(showSocials, (newVal) => {
 		class="w-11/12 max-w-7xl md:w-3/5 h-24 md:h-36 relative shadow-md rounded-xl overflow-hidden"
 	>
 		<div
-			class="w-full h-full bg-white flex justify-between items-end p-3 absolute"
+			class="w-full h-full bg-white dark:bg-neutral-950 flex justify-between items-end p-3 absolute z-10"
 		>
-			<div class="text-2xl md:text-3xl lg:text-4xl font-semibold">
+			<div
+				class="text-2xl md:text-3xl lg:text-4xl font-semibold dark:text-neutral-300"
+			>
 				<p>Lets</p>
 				<p>Work <span class="text-blue-500">Together.</span></p>
 			</div>
@@ -55,7 +57,7 @@ watch(showSocials, (newVal) => {
 		<div
 			@click="showSocials = !showSocials"
 			v-show="showSocials"
-			class="absolute w-full h-full rounded-xl backdrop-blur-sm flex justify-center items-center gap-8 border-red-500 social-link"
+			class="absolute w-full h-full rounded-xl backdrop-blur-sm flex justify-center items-center gap-8 border-red-500 z-20 social-link"
 		>
 			<a
 				v-for="social in SocialLinks"

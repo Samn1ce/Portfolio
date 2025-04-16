@@ -4,7 +4,7 @@
 		width="16"
 		height="16"
 		fill="currentColor"
-		class="bi bi-box-arrow-up-right"
+		class="bi bi-box-arrow-up-right dark:fill-white"
 		viewBox="0 0 16 16"
 	>
 		<path

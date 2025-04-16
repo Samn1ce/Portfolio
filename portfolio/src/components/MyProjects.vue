@@ -5,7 +5,7 @@ import IconEnter from './icons/IconEnter.vue'
 
 <template>
 	<div class="lg:px-28 px-5 p-4 pt-9 rounded-b-xl">
-		<div class="text-xl font-bold">Projects</div>
+		<div class="text-xl font-bold dark:text-neutral-300">Projects</div>
 		<p class="leading-6 dark:text-neutral-400 mt-2 text-xs">
 			My fun projects, cool experiments, serious endeavors and everything
 			in between, here’s a glimpse into what I work on in my spare time

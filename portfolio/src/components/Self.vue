@@ -1,20 +1,22 @@
 <template>
 	<div
-		class="md:pt-20 pt-10 md:mt-10 w-full mx-auto max-w-7xl rounded-t-xl lg:px-28 px-5 p-4 dark:bg-neutral-950"
+		class="md:pt-20 pt-10 md:mt-10 w-full mx-auto max-w-7xl rounded-t-xl lg:px-28 px-5 p-4"
 	>
 		<div
 			class="md:hidden flex flex-col gap-4 mb-10 justify-center items-center w-full py-5"
 		>
 			<div class="w-44 h-44 rounded-full border-2 border-blue-500"></div>
-			<h1 class="text-3xl font-bold text-center">BABATUNDE IFEOLUWA</h1>
+			<h1 class="text-3xl font-bold text-center dark:text-neutral-300">
+				BABATUNDE IFEOLUWA
+			</h1>
 			<div
-				class="bg-white border-2 border-red-500 flex py-2 px-5 rounded-full gap-4 font-semibold shadow-lg"
+				class="bg-white dark:bg-neutral-950 dark:text-neutral-400 border flex py-2 px-5 rounded-full gap-4 font-semibold shadow-lg"
 			>
 				<p>Home</p>
 				<p>Project</p>
 				<p>Contact</p>
 			</div>
-			<div class="space-y-1 text-sm mt-2">
+			<div class="space-y-1 text-sm mt-2 dark:text-zinc-50">
 				<p>
 					say hi:
 					<a
@@ -50,7 +52,9 @@
 			</div>
 		</div>
 		<div>
-			<h1 class="font-bold text-3xl md:text-4xl hidden md:block">
+			<h1
+				class="font-bold text-3xl md:text-4xl hidden md:block dark:text-neutral-300"
+			>
 				Hello there, I'm IFEOLUWA.
 			</h1>
 			<div>
@@ -127,8 +131,7 @@
 					<span class="font-bold"
 						>If you can read this, remember:</span
 					>
-					if you think you’re unimportant, just remember death still
-					needs you :-)
+					JESUS LOVES YOU! :-)
 				</h6>
 			</div>
 		</div>

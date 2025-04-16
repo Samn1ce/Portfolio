@@ -3,7 +3,7 @@ import { onMounted } from 'vue'
 import Header from '../components/Header.vue'
 import Self from '../components/Self.vue'
 import Footer from '../components/Footer.vue'
-import gsap from 'gsap'
+import { gsap } from 'gsap'
 import MyProjects from '@/components/MyProjects.vue'
 
 onMounted(() => {
@@ -33,11 +33,11 @@ onMounted(() => {
 
 <template>
 	<main
-		class="bg-about w-full flex flex-col gap-4 items-center bg-zinc-200 py-5"
+		class="bg-about bg-fixed w-full flex flex-col gap-4 items-center bg-zinc-200 py-5 content"
 	>
 		<Header />
 		<div
-			class="content sm:max-w-7xl w-11/12 md:w-3/5 font-poppins bg-white shadow-md rounded-xl"
+			class="sm:max-w-7xl w-11/12 md:w-3/5 font-poppins bg-white shadow-md rounded-xl"
 		>
 			<Self />
 			<MyProjects />

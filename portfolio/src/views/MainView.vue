@@ -37,7 +37,7 @@ onMounted(() => {
 
 <template>
 	<main
-		class="bg-bgColor w-full min-h-screen flex flex-col justify-between items-center gap-4 bg-zinc-200"
+		class="w-full min-h-screen flex flex-col justify-between items-center gap-4 bg-zinc-200"
 	>
 		<Header />
 		<div class="w-[90%] sm:max-w-7xl sm:w-3/5 font-poppins">

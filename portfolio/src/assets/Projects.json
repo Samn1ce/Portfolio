@@ -4,6 +4,7 @@
 		"img": "EASYBANK.png",
 		"name": "Easybank",
 		"link": "https://easybank-two-blush.vercel.app/",
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellat perspiciatis ab, corrupti consectetur maxime!",
 		"lang": [
 			{ "name": "Tailwind", "color": "#60a5fa" },
 			{ "name": "React", "color": "#61DAFB" },
@@ -15,6 +16,7 @@
 		"img": "SHORTLY.png",
 		"name": "Shortly",
 		"link": "https://shorrttly.vercel.app",
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellat perspiciatis ab, corrupti consectetur maxime!",
 		"lang": [
 			{ "name": "Tailwind", "color": "#60a5fa" },
 			{ "name": "VUE", "color": "#41B883" },
@@ -27,6 +29,7 @@
 		"img": "RPS.png",
 		"name": "Rock, Paper, Scissors",
 		"link": "https://rps-iota-one.vercel.app/",
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellat perspiciatis ab, corrupti consectetur maxime!",
 		"lang": [
 			{ "name": "VUE", "color": "#41B883" },
 			{ "name": "Tailwind", "color": "#60a5fa" },
@@ -38,6 +41,7 @@
 		"img": "MSF.png",
 		"name": "Multi Step Form",
 		"link": "https://multi-step-form-six-lemon.vercel.app/",
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellat perspiciatis ab, corrupti consectetur maxime!",
 		"lang": [
 			{ "name": "Tailwind", "color": "#60a5fa" },
 			{ "name": "React", "color": "#61DAFB" },
@@ -49,6 +53,7 @@
 		"img": "FINANCE.png",
 		"name": "Finance",
 		"link": "https://finance-three-bay.vercel.app/",
+		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellat perspiciatis ab, corrupti consectetur maxime!",
 		"lang": [
 			{ "name": "Tailwind", "color": "#60a5fa" },
 			{ "name": "React", "color": "#61DAFB" },

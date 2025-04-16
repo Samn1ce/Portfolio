@@ -11,8 +11,9 @@ export default {
 					'linear-gradient(to bottom right, #191919, #101010, #050505, #020202)',
 				gradientModal:
 					'linear-gradient(to top left, #191919, #101010, #050505, #020202)',
-				'dark-about':
+				darkAbout:
 					'linear-gradient(300deg, rgb(0, 0, 0) 40%, rgb(0, 26, 67) 20%, rgb(0, 26, 67) 10%, rgb(0, 0, 0) 45%, rgb(0, 0, 0) 100%)',
+				about: 'linear-gradient(300deg, rgb(245, 245, 245) 40%, rgb(0, 26, 67, 0.1) 20%, rgb(0, 26, 67, 0.2) 10%, rgb(245, 245, 245) 45%, rgb(245, 245, 245) 100%)',
 			},
 			height: {
 				37: '37%',

@@ -33,7 +33,7 @@ onMounted(() => {
 
 <template>
 	<main
-		class="w-full min-h-screen flex flex-col gap-4 items-center bg-zinc-200 py-5"
+		class="bg-about w-full flex flex-col gap-4 items-center bg-zinc-200 py-5"
 	>
 		<Header />
 		<div

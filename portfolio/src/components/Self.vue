@@ -80,33 +80,89 @@ import Asterics from './icons/IconAsterics.vue'
 	<div
 		class="md:pt-20 pt-10 md:mt-10 w-full mx-auto max-w-7xl rounded-t-xl lg:px-28 px-5 p-4"
 	>
+		<div
+			class="md:hidden flex flex-col gap-4 mb-10 justify-center items-center w-full py-5"
+		>
+			<div class="w-44 h-44 rounded-full border-2 border-blue-500"></div>
+			<h1 class="text-3xl font-bold text-center">BABATUNDE IFEOLUWA</h1>
+			<div
+				class="bg-white border-2 border-red-500 flex py-2 px-5 rounded-full gap-4 font-semibold shadow-lg"
+			>
+				<p>Home</p>
+				<p>Project</p>
+				<p>Contact</p>
+			</div>
+			<div class="space-y-1 text-sm mt-2">
+				<p>
+					say hi:
+					<a
+						href="mailto:iamsamnice@gmail.com"
+						class="border-dotted border-b border-blue-500 text-blue-500"
+						>iamsamnice@gmail.com</a
+					>
+				</p>
+				<p>
+					github
+					<a
+						href="https://github.com/samn1ce"
+						class="border-dotted border-b border-blue-500 text-blue-500"
+						>samn1ce</a
+					>
+				</p>
+				<p>
+					linkedin:
+					<a
+						class="border-dotted border-b border-blue-500 text-blue-500"
+						href="https://www.linkedin.com/in/ifeoluwa-babatunde-9036b7288/"
+						>Ifeoluwa Babatunde</a
+					>
+				</p>
+				<p>
+					twitter(x):
+					<a
+						href="https://x.com/ifeoluwasamnice"
+						class="border-dotted border-b border-blue-500 text-blue-500"
+						>ifeoluwasamnice</a
+					>
+				</p>
+			</div>
+		</div>
 		<div>
-			<h1 class="font-bold text-3xl md:text-4xl">
+			<h1 class="font-bold text-3xl md:text-4xl hidden md:block">
 				Hello there, I'm IFEOLUWA.
 			</h1>
 			<div>
 				<div class="mt-3 dark:text-neutral-400 leading-6">
-					<div class="space-y-1">
+					<div class="space-y-1 hidden md:block">
 						<p>
 							say hi:
-							<a href="mailto:iamsamnice@gmail.com"
+							<a
+								href="mailto:iamsamnice@gmail.com"
+								class="border-dotted border-b border-blue-500 text-blue-500"
 								>iamsamnice@gmail.com</a
 							>
 						</p>
 						<p>
 							github:
-							<a href="https://github.com/samn1ce">samn1ce</a>
+							<a
+								href="https://github.com/samn1ce"
+								class="border-dotted border-b border-blue-500 text-blue-500"
+								>samn1ce</a
+							>
 						</p>
 						<p>
 							linkedin:
 							<a
-								class="https://www.linkedin.com/in/ifeoluwa-babatunde-9036b7288/"
+								href="https://www.linkedin.com/in/ifeoluwa-babatunde-9036b7288/"
+								class="border-dotted border-b border-blue-500 text-blue-500"
 								>Ifeoluwa Babatunde</a
 							>
 						</p>
 						<p>
 							twitter(x):
-							<a href="https://x.com/ifeoluwasamnice"
+							<a
+								href="https://x.com/ifeoluwasamnice"
+								class="border-dotted border-b border-blue-500 text-blue-500"
 								>ifeoluwasamnice</a
 							>
 						</p>

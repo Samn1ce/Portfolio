@@ -9,7 +9,7 @@ defineProps(['isDark', 'toggleDark'])
 
 <template>
 	<div
-		class="md:hidden flex flex-col gap-4 mb-10 justify-center items-center w-full py-5"
+		class="md:hidden flex flex-col gap-4 mb-10 justify-center items-center w-full pt-24"
 	>
 		<MobileHeader :is-dark="isDark" :toggle-dark="toggleDark" />
 		<Self />

@@ -8,7 +8,7 @@ defineProps(['isDark', 'toggleDark'])
 	>
 		<div>
 			<h1
-				class="font-bold text-3xl md:text-4xl hidden md:block dark:text-neutral-300"
+				class="font-bold text-3xl md:text-4xl hidden md:block dark:text-neutral-400"
 			>
 				Hello there, I'm IFEOLUWA.
 			</h1>

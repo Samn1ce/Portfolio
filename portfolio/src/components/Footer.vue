@@ -20,18 +20,19 @@ const iconMap = {
 
 watch(showSocials, (newVal) => {
 	if (newVal) {
-		// Run GSAP animation when `showSocials` is true
-		gsap.fromTo(
-			'.social-link',
-			{ opacity: 0, y: 20 }, // Start state
-			{
-				opacity: 1,
-				y: 0,
-				duration: 0.5,
-				stagger: 0.1, // Delay between each element
-				ease: 'power2.inOut',
-			}
-		)
+		nextTick(() => {
+			gsap.fromTo(
+				'.social-link',
+				{ opacity: 0, y: 20 },
+				{
+					opacity: 1,
+					y: 0,
+					duration: 0.5,
+					stagger: 0.1,
+					ease: 'power2.inOut',
+				}
+			)
+		})
 	}
 })
 </script>
@@ -49,15 +50,14 @@ watch(showSocials, (newVal) => {
 				<p>Lets</p>
 				<p>Work <span class="text-blue-500">Together.</span></p>
 			</div>
-			<Enter
-				@click="showSocials = !showSocials"
-				class="w-7 h-7 cursor-pointer"
-			/>
+			<div @click="showSocials = !showSocials">
+				<Enter class="w-7 h-7 cursor-pointer" />
+			</div>
 		</div>
 		<div
 			@click="showSocials = !showSocials"
-			v-show="showSocials"
-			class="absolute w-full h-full rounded-xl backdrop-blur-sm flex justify-center items-center gap-8 border-red-500 z-20 social-link"
+			v-if="showSocials"
+			class="absolute w-full h-full rounded-xl backdrop-blur-sm flex justify-center items-center gap-8 border-red-500 z-20"
 		>
 			<a
 				v-for="social in SocialLinks"

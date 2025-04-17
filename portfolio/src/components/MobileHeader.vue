@@ -29,7 +29,7 @@ defineProps(['isDark', 'toggleDark'])
 			/>
 		</div>
 	</div>
-	<div class="space-y-1 text-sm mt-2 dark:text-zinc-50">
+	<div class="space-y-1 text-sm mt-2 dark:text-neutral-400 self-start px-5">
 		<p>
 			say hi:
 			<a

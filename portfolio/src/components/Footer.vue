@@ -1,5 +1,5 @@
 <script setup>
-import { ref, watch } from 'vue'
+import { ref, watch, nextTick } from 'vue'
 import Enter from './icons/IconEnter.vue'
 import IconMail from './icons/IconMail.vue'
 import IconGitHub from './icons/IconGitHub.vue'
@@ -18,20 +18,28 @@ const iconMap = {
 	Github: IconGitHub,
 }
 
-watch(showSocials, (newVal) => {
+watch(showSocials, async (newVal) => {
+	await nextTick()
 	if (newVal) {
-		nextTick(() => {
-			gsap.fromTo(
-				'.social-link',
-				{ opacity: 0, y: 20 },
-				{
-					opacity: 1,
-					y: 0,
-					duration: 0.5,
-					stagger: 0.1,
-					ease: 'power2.inOut',
-				}
-			)
+		// Animate in
+		gsap.fromTo(
+			'.social-link',
+			{ opacity: 0, y: 20 },
+			{
+				opacity: 1,
+				y: 0,
+				duration: 0.5,
+				stagger: 0.1,
+				ease: 'power2.inOut',
+			}
+		)
+	} else {
+		// Animate out
+		gsap.to('.social-link', {
+			opacity: 0,
+			y: 20,
+			duration: 0.3,
+			ease: 'power2.inOut',
 		})
 	}
 })
@@ -56,8 +64,11 @@ watch(showSocials, (newVal) => {
 		</div>
 		<div
 			@click="showSocials = !showSocials"
-			v-if="showSocials"
-			class="absolute w-full h-full rounded-xl backdrop-blur-sm flex justify-center items-center gap-8 border-red-500 z-20"
+			v-show="true"
+			:class="[
+				'absolute w-full h-full rounded-xl flex justify-center items-center gap-8 border-red-500 z-20',
+				showSocials ? 'backdrop-blur-sm' : 'cursor-pointer',
+			]"
 		>
 			<a
 				v-for="social in SocialLinks"

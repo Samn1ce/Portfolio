@@ -4,6 +4,7 @@ defineProps(['isDark', 'toggleDark'])
 
 <template>
 	<div
+		id="home"
 		class="md:pt-20 pt-10 md:mt-10 w-full mx-auto max-w-7xl rounded-t-xl lg:px-28 px-5 md:p-4"
 	>
 		<div>

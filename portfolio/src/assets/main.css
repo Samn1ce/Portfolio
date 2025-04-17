@@ -4,6 +4,9 @@
 .blue {
 	color: #00000033;
 }
+html {
+	scroll-behavior: smooth;
+}
 
 @tailwind base;
 @tailwind components;

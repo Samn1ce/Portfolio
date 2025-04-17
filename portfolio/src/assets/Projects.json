@@ -4,7 +4,7 @@
 		"img": "EASYBANK.png",
 		"name": "Easybank",
 		"link": "https://easybank-two-blush.vercel.app/",
-		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellat perspiciatis ab, corrupti consectetur maxime!",
+		"description": "Easybank! Pure Banking Landing Page for Swift and Fast Transactions. Sign up and enjoy Easybanking.",
 		"lang": [
 			{ "name": "Tailwind", "color": "#60a5fa" },
 			{ "name": "React", "color": "#61DAFB" },
@@ -16,7 +16,7 @@
 		"img": "SHORTLY.png",
 		"name": "Shortly",
 		"link": "https://shorrttly.vercel.app",
-		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellat perspiciatis ab, corrupti consectetur maxime!",
+		"description": "Hate Long Links? Fix your problem with SHORTLY. Shortens your Links for sharing access",
 		"lang": [
 			{ "name": "Tailwind", "color": "#60a5fa" },
 			{ "name": "VUE", "color": "#41B883" },
@@ -41,7 +41,7 @@
 		"img": "MSF.png",
 		"name": "Multi Step Form",
 		"link": "https://multi-step-form-six-lemon.vercel.app/",
-		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellat perspiciatis ab, corrupti consectetur maxime!",
+		"description": "Fill this Multi-step-form to get access into your gaming store. Enjoy Gaming!",
 		"lang": [
 			{ "name": "Tailwind", "color": "#60a5fa" },
 			{ "name": "React", "color": "#61DAFB" },
@@ -53,7 +53,7 @@
 		"img": "FINANCE.png",
 		"name": "Finance",
 		"link": "https://finance-three-bay.vercel.app/",
-		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellat perspiciatis ab, corrupti consectetur maxime!",
+		"description": "Finance Dashboard project. Track your Transactions and Bills at the same instance on the web.",
 		"lang": [
 			{ "name": "Tailwind", "color": "#60a5fa" },
 			{ "name": "React", "color": "#61DAFB" },

@@ -14,9 +14,9 @@ defineProps(['isDark', 'toggleDark'])
 		<div
 			class="bg-white border flex py-2 px-5 rounded-full gap-4 font-semibold shadow-lg dark:bg-neutral-950 dark:text-zinc-50"
 		>
-			<p>Home</p>
-			<p>Project</p>
-			<p>Contact</p>
+			<a href="#home">Home</a>
+			<a href="#project">Project</a>
+			<a href="#contact">Contact</a>
 		</div>
 		<div
 			@click="toggleDark"

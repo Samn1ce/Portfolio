@@ -47,6 +47,7 @@ watch(showSocials, async (newVal) => {
 
 <template>
 	<div
+		id="contact"
 		class="w-11/12 max-w-7xl md:w-3/5 h-24 md:h-36 relative shadow-md rounded-xl overflow-hidden"
 	>
 		<div
@@ -63,11 +64,11 @@ watch(showSocials, async (newVal) => {
 			</div>
 		</div>
 		<div
-			@click="showSocials = !showSocials"
+			@click="showSocials = false"
 			v-show="true"
 			:class="[
-				'absolute w-full h-full rounded-xl flex justify-center items-center gap-8 border-red-500 z-20',
-				showSocials ? 'backdrop-blur-sm' : 'cursor-pointer',
+				'absolute w-full h-full rounded-xl flex justify-center items-center gap-8 border-red-500',
+				showSocials ? 'backdrop-blur-sm z-20' : 'cursor-pointer',
 			]"
 		>
 			<a

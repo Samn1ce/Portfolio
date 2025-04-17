@@ -1,6 +1,4 @@
 <script setup>
-import Mobile from './Mobile.vue'
-
 defineProps(['isDark', 'toggleDark'])
 </script>
 
@@ -8,7 +6,6 @@ defineProps(['isDark', 'toggleDark'])
 	<div
 		class="md:pt-20 pt-10 md:mt-10 w-full mx-auto max-w-7xl rounded-t-xl lg:px-28 px-5 p-4"
 	>
-		<Mobile :isDark="isDark" :toggleDark="toggleDark" />
 		<div>
 			<h1
 				class="font-bold text-3xl md:text-4xl hidden md:block dark:text-neutral-300"

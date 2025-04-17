@@ -31,7 +31,7 @@ import IconEnter from './icons/IconEnter.vue'
 								{{ language.name
 								}}<span
 									v-if="i < project.lang.length - 1"
-									class="text-white dark:text-neutral-500"
+									class="text-neutral-900 dark:text-neutral-500"
 									>,&nbsp;
 								</span>
 							</div>

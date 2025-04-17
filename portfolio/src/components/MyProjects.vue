@@ -28,11 +28,11 @@ import IconEnter from './icons/IconEnter.vue'
 						<div class="text-neutral-600 text-xs flex">
 							--
 							<div v-for="(language, i) in project.lang">
-								{{ language.name }}
-								<span
+								{{ language.name
+								}}<span
 									v-if="i < project.lang.length - 1"
-									class="text-white"
-									>,;
+									class="text-white dark:text-neutral-500"
+									>,&nbsp;
 								</span>
 							</div>
 						</div>
@@ -43,7 +43,7 @@ import IconEnter from './icons/IconEnter.vue'
 					<div class="flex items-center gap-5 mt-2">
 						<a
 							class="cursor-pointer"
-							href="project.link"
+							:href="project.link"
 							target="_blank"
 						>
 							<IconEnter />

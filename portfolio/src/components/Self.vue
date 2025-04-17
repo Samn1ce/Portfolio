@@ -8,7 +8,7 @@ defineProps(['isDark', 'toggleDark'])
 	<div
 		class="md:pt-20 pt-10 md:mt-10 w-full mx-auto max-w-7xl rounded-t-xl lg:px-28 px-5 p-4"
 	>
-		<Mobile isDark="isDark" toggleDark="toggleDark" />
+		<Mobile :isDark="isDark" :toggleDark="toggleDark" />
 		<div>
 			<h1
 				class="font-bold text-3xl md:text-4xl hidden md:block dark:text-neutral-300"
@@ -85,7 +85,9 @@ defineProps(['isDark', 'toggleDark'])
 						</p>
 					</div>
 				</div>
-				<h6 class="text-xl font-fuggles">
+				<h6
+					class="text-xl font-fuggles text-neutral-300/30 dark:text-black"
+				>
 					<span class="font-bold"
 						>If you can read this, remember:</span
 					>

@@ -9,7 +9,6 @@ import SocialLinks from '../assets/SocialLinks.json'
 import gsap from 'gsap'
 
 const showSocials = ref(false)
-console.log(showSocials)
 
 const iconMap = {
 	Twitter: IconTwitter,

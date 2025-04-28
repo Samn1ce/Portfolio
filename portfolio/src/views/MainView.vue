@@ -29,13 +29,13 @@ onMounted(() => {
 	)
 
 	// Initial state
-	gsap.set(sections, {
+	gsap.set('.main', {
 		y: 50,
 		opacity: 0,
 	})
 
 	// Animate sections with stagger effect
-	gsap.to(sections, {
+	gsap.to('.main', {
 		duration: 1,
 		y: 0,
 		opacity: 1,
@@ -54,7 +54,7 @@ onMounted(() => {
 		<Header :is-dark="isDark" :toggle-dark="toggleDark" />
 
 		<div
-			class="sm:max-w-7xl w-11/12 md:w-3/5 font-poppins bg-white dark:bg-neutral-950 shadow-md rounded-xl"
+			class="main sm:max-w-7xl w-11/12 md:w-3/5 font-poppins bg-white dark:bg-neutral-950 shadow-md rounded-xl"
 		>
 			<div class="hidden md:block">
 				<Self :is-dark="isDark" :toggle-dark="toggleDark" />

@@ -9,7 +9,11 @@ defineProps(['isDark', 'toggleDark'])
 	<div
 		class="md:w-4/6 h-16 hidden md:flex items-center justify-between px-10"
 	>
-		<div class="bg-white h-10 w-10 border rounded-full shadow-lg"></div>
+		<div
+			class="bg-transparent h-10 w-10 border rounded-full shadow-lg flex justify-center items-center"
+		>
+			<img src="/pcPFP.png" alt="my bitmoji" />
+		</div>
 
 		<div
 			class="bg-white border flex py-2 px-5 rounded-full gap-4 font-semibold shadow-lg dark:bg-neutral-950 dark:text-zinc-50"

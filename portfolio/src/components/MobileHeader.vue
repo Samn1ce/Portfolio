@@ -7,7 +7,11 @@ defineProps(['isDark', 'toggleDark'])
 </script>
 
 <template>
-	<div class="w-44 h-44 rounded-full border-2 border-blue-500"></div>
+	<div
+		class="w-44 h-44 rounded-full flex justify-center items-center overflow-hidden"
+	>
+		<img src="/MobilePFP.png" alt="my bitmoji" class="w-[90%] mt-8" />
+	</div>
 	<h1 class="text-4xl font-bold text-center dark:text-neutral-300">
 		BABATUNDE IFEOLUWA
 	</h1>

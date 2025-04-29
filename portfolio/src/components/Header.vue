@@ -3,6 +3,13 @@ import IconDark from './icons/IconDark.vue'
 import IconLight from './icons/IconLight.vue'
 
 defineProps(['isDark', 'toggleDark'])
+
+const scrollToSection = (sectionId) => {
+	const element = document.getElementById(sectionId)
+	if (element) {
+		element.scrollIntoView({ behavior: 'smooth' })
+	}
+}
 </script>
 
 <template>
@@ -18,9 +25,24 @@ defineProps(['isDark', 'toggleDark'])
 		<div
 			class="bg-white border flex py-2 px-5 rounded-full gap-4 font-semibold shadow-lg dark:bg-neutral-950 dark:text-zinc-50"
 		>
-			<a href="#home">Home</a>
-			<a href="#project">Project</a>
-			<a href="#contact">Contact</a>
+			<a
+				@click.prevent="scrollToSection('home')"
+				href="#"
+				class="cursor-pointer"
+				>Home</a
+			>
+			<a
+				@click.prevent="scrollToSection('project')"
+				href="#"
+				class="cursor-pointer"
+				>Project</a
+			>
+			<a
+				@click.prevent="scrollToSection('contact')"
+				href="#"
+				class="cursor-pointer"
+				>Contact</a
+			>
 		</div>
 		<div
 			@click="toggleDark"

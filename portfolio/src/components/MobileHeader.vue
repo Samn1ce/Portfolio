@@ -1,14 +1,20 @@
 <script setup>
 import IconDark from './icons/IconDark.vue'
 import IconLight from './icons/IconLight.vue'
-import MobileHeader from './MobileHeader.vue'
 
 defineProps(['isDark', 'toggleDark'])
+
+const scrollToSection = (sectionId) => {
+	const element = document.getElementById(sectionId)
+	if (element) {
+		element.scrollIntoView({ behavior: 'smooth' })
+	}
+}
 </script>
 
 <template>
 	<div
-		class="w-44 h-44 rounded-full flex justify-center items-center overflow-hidden"
+		class="w-44 h-44 rounded-l-full flex justify-center items-center overflow-hidden"
 	>
 		<img src="/MobilePFP.png" alt="my bitmoji" class="w-[90%] mt-8" />
 	</div>
@@ -19,9 +25,24 @@ defineProps(['isDark', 'toggleDark'])
 		<div
 			class="bg-white dark:bg-neutral-950 dark:text-neutral-400 border flex py-2 px-5 rounded-full gap-4 font-semibold shadow-lg"
 		>
-			<a href="#home">Home</a>
-			<a href="#project">Project</a>
-			<a href="#contact">Contact</a>
+			<a
+				@click.prevent="scrollToSection('home')"
+				href="#home"
+				class="cursor-pointer"
+				>Home</a
+			>
+			<a
+				@click.prevent="scrollToSection('project')"
+				href="#project"
+				class="cursor-pointer"
+				>Project</a
+			>
+			<a
+				@click.prevent="scrollToSection('contact')"
+				href="#"
+				class="cursor-pointer"
+				>Contact</a
+			>
 		</div>
 		<div
 			@click="toggleDark"

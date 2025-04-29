@@ -5,7 +5,6 @@ import Self from '../components/Self.vue'
 import Footer from '../components/Footer.vue'
 import gsap from 'gsap'
 import MyProjects from '@/components/MyProjects.vue'
-import Mobile from '@/components/Mobile.vue'
 import MobileHeader from '@/components/MobileHeader.vue'
 
 const isDark = ref(false)
@@ -57,16 +56,11 @@ onMounted(() => {
 		<div
 			class="main sm:max-w-7xl w-11/12 md:w-3/5 font-poppins bg-white dark:bg-neutral-950 shadow-md rounded-xl"
 		>
-			<!-- <div id="project" class="hidden md:block">
-				<Self :is-dark="isDark" :toggle-dark="toggleDark" />
-				<MyProjects :is-dark="isDark" :toggle-dark="toggleDark" />
-			</div>
-			<Mobile :is-dark="isDark" :toggle-dark="toggleDark" /> -->
 			<div class="hidden md:block">
 				<Self :is-dark="isDark" :toggle-dark="toggleDark" />
 				<MyProjects :is-dark="isDark" :toggle-dark="toggleDark" />
 			</div>
-			<!-- <Mobile :is-dark="isDark" :toggle-dark="toggleDark" /> -->
+			<!-- Mobile Display -->
 			<div
 				class="md:hidden flex flex-col gap-4 mb-10 justify-center items-center w-full pt-20"
 			>

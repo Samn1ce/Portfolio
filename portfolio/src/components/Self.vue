@@ -84,7 +84,7 @@ defineProps(['isDark', 'toggleDark'])
 					</div>
 				</div>
 				<h6
-					class="text-xl font-fuggles text-neutral-300/30 dark:text-black"
+					class="text-xl font-fuggles text-zinc-900/50 dark:text-zinc-300/70"
 				>
 					<span class="font-bold"
 						>If you can read this, remember:</span

@@ -39,6 +39,7 @@ export default {
 			fontFamily: {
 				edu: ['"Edu AU VIC WA NT Pre"', 'sans-serif'],
 				poppins: ['Poppins', 'sans-serif'],
+				fuggles: ['Fuggles', 'sans-serif'],
 			},
 		},
 	},

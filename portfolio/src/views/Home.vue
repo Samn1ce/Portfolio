@@ -9,7 +9,8 @@ const skills = [
 
 <template>
 	<div
-		class="max-w-7xl mx-auto w-full min-h-screen flex flex-col items-center relative"
+		id="home"
+		class="max-w-7xl mx-auto w-full min-h-screen 2xl:min-h-156 flex flex-col items-center relative"
 	>
 		<main
 			class="flex-1 flex flex-col items-center justify-center w-full px-4 max-w-5xl mx-auto mt-10 md:mt-auto relative z-10"

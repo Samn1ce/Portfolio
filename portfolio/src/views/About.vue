@@ -23,7 +23,7 @@ const services = [
 </script>
 
 <template>
-	<section id="about" class="w-11/12 max-w-7xl mx-auto md:px-6 pt-0 pb-16">
+	<section id="about" class="w-11/12 max-w-7xl mx-auto md:px-6 pb-8">
 		<div class="flex items-center gap-4 mb-8 md:mb-16">
 			<span class="text-[#555] text-sm font-mono">01</span>
 			<h2

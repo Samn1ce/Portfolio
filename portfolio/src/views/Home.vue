@@ -5,6 +5,10 @@ const skills = [
 	'Frontend Development',
 	'Backend Development',
 ]
+
+const scrollTo = (id) => {
+	document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+}
 </script>
 
 <template>
@@ -58,12 +62,12 @@ const skills = [
 			</p>
 
 			<div class="flex flex-col sm:flex-row gap-4 mt-8">
-				<a
-					href="#"
+				<button
+					@click="scrollTo('#projects')"
 					class="px-8 py-3 rounded-full bg-[#cbf3ce] text-black font-semibold text-lg hover:bg-[#b5e0b8] transition-colors text-center shadow-lg"
 				>
 					See work
-				</a>
+				</button>
 				<a
 					href="#"
 					class="px-8 py-3 rounded-full bg-[#242426] text-white font-medium text-lg border border-white/5 hover:bg-[#2e2e30] transition-colors text-center"

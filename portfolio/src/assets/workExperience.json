@@ -1,0 +1,18 @@
+[
+	{
+		"company": "Freelance",
+		"role": "Full-Stack Developer",
+		"period": "2022 — Present",
+		"location": "Lagos, Nigeria",
+		"description": "Designing and building web applications for clients across Nigeria and internationally. From scoping to deployment.",
+		"langs": ["Vue", "Laravel", "MySQL", "Tailwind"]
+	},
+	{
+		"company": "TechStudio NG",
+		"role": "Frontend Developer Intern",
+		"period": "2023",
+		"location": "Lagos, Nigeria",
+		"description": "Collaborated on a team of 4 building internal dashboards and client-facing web apps using React and Tailwind.",
+		"langs": ["React", "TypeScript", "Tailwind"]
+	}
+]

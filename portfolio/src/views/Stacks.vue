@@ -1,56 +1,66 @@
 <script setup>
+import IconTailwind from '@/components/icons/IconTailwind.vue'
+import IconReact from '@/components/icons/IconReact.vue'
+import IconJavascript from '@/components/icons/IconJavascript.vue'
+import IconTypescript from '@/components/icons/IconTypescript.vue'
+import IconVue from '@/components/icons/IconVue.vue'
+import IconHtml from '@/components/icons/IconHtml.vue'
+import IconNextJs from '@/components/icons/IconNextJs.vue'
+import IconPhp from '@/components/icons/IconPhp.vue'
+import IconLaravel from '@/components/icons/IconLaravel.vue'
+
 const stacks = [
 	{
 		name: 'HTML',
-		icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
+		icon: IconHtml,
 	},
 	{
 		name: 'CSS',
-		icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg',
+		icon: IconCss,
 	},
 	{
 		name: 'Tailwind',
-		icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
+		icon: IconTailwind,
 	},
 	{
 		name: 'JavaScript',
-		icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
+		icon: IconJavascript,
 	},
 	{
 		name: 'TypeScript',
-		icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
+		icon: IconTypescript,
 	},
 	{
 		name: 'React',
-		icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
+		icon: IconReact,
 	},
 	{
 		name: 'Vue',
-		icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg',
+		icon: IconVue,
 	},
 	{
 		name: 'Next.js',
-		icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg',
+		icon: IconNextJs,
 	},
 	{
 		name: 'PHP',
-		icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg',
+		icon: IconPhp,
 	},
 	{
 		name: 'Laravel',
-		icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg',
+		icon: IconLaravel,
 	},
 	{
 		name: 'Supabase',
-		icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg',
+		icon: IconSupabase,
 	},
 	{
 		name: 'MySQL',
-		icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg',
+		icon: IconSql,
 	},
 	{
 		name: 'PostgreSQL',
-		icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
+		icon: IconPostgreSql,
 	},
 ]
 </script>
@@ -73,10 +83,10 @@ const stacks = [
 				<div
 					class="flex items-center justify-center gap-2 p-3 border border-white/10 hover:bg-white/5 transition-all duration-200 cursor-default"
 				>
-					<img
-						:src="stack.icon"
+					<component
+						:is="stack.icon"
 						:alt="stack.name"
-						class="w-5 h-5 opacity-70 group-hover:opacity-100 transition-opacity duration-200"
+						class="w-4 h-4 opacity-70 group-hover:opacity-100 transition-opacity duration-200"
 					/>
 					<span
 						class="text-[#555] text-[11px] font-mono group-hover:text-[#999] transition-colors duration-200"

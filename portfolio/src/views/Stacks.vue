@@ -5,9 +5,13 @@ import IconJavascript from '@/components/icons/IconJavascript.vue'
 import IconTypescript from '@/components/icons/IconTypescript.vue'
 import IconVue from '@/components/icons/IconVue.vue'
 import IconHtml from '@/components/icons/IconHtml.vue'
+import IconCss from '@/components/icons/IconCss.vue'
 import IconNextJs from '@/components/icons/IconNextJs.vue'
 import IconPhp from '@/components/icons/IconPhp.vue'
 import IconLaravel from '@/components/icons/IconLaravel.vue'
+import IconSql from '@/components/icons/IconSql.vue'
+import IconSupabase from '@/components/icons/IconSupabase.vue'
+import IconPostgreSql from '@/components/icons/IconPostgreSql.vue'
 
 const stacks = [
 	{

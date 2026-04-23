@@ -3,30 +3,30 @@
 		"label": "Send a mail",
 		"handle": "iamsamnice@email.com",
 		"href": "mailto:iamsamnice@email.com",
-		"icon": "IconMail"
+		"icon": "mail"
 	},
 	{
 		"label": "WhatsApp",
 		"handle": "+234 906 682 8098",
 		"href": "https://wa.me/2349066828098",
-		"icon": "IconWhatsApp"
+		"icon": "whatsapp"
 	},
 	{
 		"label": "LinkedIn",
 		"handle": "linkedin/ifeoluwa",
 		"href": "https://linkedin.com/in/yourusername",
-		"icon": "IconLinkedIn"
+		"icon": "linkedIn"
 	},
 	{
 		"label": "GitHub",
 		"handle": "github/ifeoluwa",
 		"href": "https://github.com/Samn1ce",
-		"icon": "IconGitHub"
+		"icon": "github"
 	},
 	{
 		"label": "X",
 		"handle": "@__samnice__",
 		"href": "https://x.com/__samnice__",
-		"icon": "IconX"
+		"icon": "X"
 	}
 ]

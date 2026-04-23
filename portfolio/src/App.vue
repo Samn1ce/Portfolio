@@ -43,6 +43,7 @@ onMounted(() => {
 onUnmounted(() => observer?.disconnect())
 
 const scrollTo = (id) => {
+	activeSection.value = id
 	document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
 }
 </script>
@@ -78,10 +79,12 @@ const scrollTo = (id) => {
 				/>
 			</button>
 		</nav>
-		<Home />
-		<About />
-		<Stacks />
-		<Projects />
-		<Contact />
+		<div class="anim">
+			<Home />
+			<About />
+			<Stacks />
+			<Projects />
+			<Contact />
+		</div>
 	</div>
 </template>

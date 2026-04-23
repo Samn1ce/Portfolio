@@ -24,14 +24,14 @@ import workExperience from '@/assets/workExperience.json'
 			class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-16 md:mb-24"
 		>
 			<div
-				v-for="project in projects"
-				:key="project.number"
+				v-for="(project, index) in projects"
+				:key="project.id"
 				:href="project.link"
 				class="group relative flex flex-col justify-between border border-white/10 p-6 md:p-8 aspect-square hover:bg-white/3 transition-all duration-300"
 			>
 				<div class="flex items-center justify-between">
 					<span class="text-[#555] text-xs font-mono">{{
-						project.number
+						String(index + 1).padStart(2, '0')
 					}}</span>
 					<span class="text-[#444] text-xs font-mono">{{
 						project.year
@@ -94,9 +94,7 @@ import workExperience from '@/assets/workExperience.json'
 			<div class="flex-1 border border-white/10"></div>
 		</div>
 
-		<!-- Timeline -->
 		<div class="relative">
-			<!-- Mobile: left line | Desktop: center line -->
 			<div
 				class="absolute left-3 top-0 bottom-0 w-px md:left-1/2 md:-translate-x-1/2"
 				style="
@@ -116,7 +114,6 @@ import workExperience from '@/assets/workExperience.json'
 					:key="job.company"
 					class="relative grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-0"
 				>
-					<!-- Mobile: left dot | Desktop: center dot -->
 					<div
 						class="absolute left-2 sm:left-[4.5px] top-6 w-3 h-3 rounded-full bg-[#cbf3ce] border-2 border-[#0d0d0d] z-10 md:left-1/2 md:-translate-x-1/2"
 					></div>

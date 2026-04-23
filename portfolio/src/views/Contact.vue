@@ -1,5 +1,18 @@
 <script setup>
 import Socials from '@/assets/Socials.json'
+import IconGitHub from '@/components/icons/IconGitHub.vue'
+import IconLinkedIn from '@/components/icons/IconLinkedIn.vue'
+import IconMail from '@/components/icons/IconMail.vue'
+import IconWhatsapp from '@/components/icons/IconWhatsapp.vue'
+import IconX from '@/components/icons/IconX.vue'
+
+const iconMap = {
+	X: IconX,
+	linkedIn: IconLinkedIn,
+	mail: IconMail,
+	github: IconGitHub,
+	whatsapp: IconWhatsapp,
+}
 </script>
 
 <template>
@@ -55,7 +68,7 @@ import Socials from '@/assets/Socials.json'
 					class="group flex items-center gap-3 border border-white/10 px-5 py-3 hover:border-white/30 hover:bg-white/5 transition-all duration-300"
 				>
 					<component
-						:is="social.icon"
+						:is="iconMap[social.icon]"
 						class="w-4 h-4 text-[#555] group-hover:text-white transition-colors duration-300"
 					/>
 					<div class="flex flex-col items-center justify-center">

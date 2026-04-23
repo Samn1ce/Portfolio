@@ -12,6 +12,7 @@ import IconLaravel from '@/components/icons/IconLaravel.vue'
 import IconSql from '@/components/icons/IconSql.vue'
 import IconSupabase from '@/components/icons/IconSupabase.vue'
 import IconPostgreSql from '@/components/icons/IconPostgreSql.vue'
+import IconAlpineJs from '@/components/icons/IconAlpineJs.vue'
 
 const stacks = [
 	{
@@ -45,6 +46,10 @@ const stacks = [
 	{
 		name: 'Next.js',
 		icon: IconNextJs,
+	},
+	{
+		name: 'Alpine.js',
+		icon: IconAlpineJs,
 	},
 	{
 		name: 'PHP',

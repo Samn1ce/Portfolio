@@ -1,40 +1,50 @@
 [
 	{
-		"id": 1,
-		"number": "01",
+		"img": "",
+		"name": "Schooly",
+		"description": "Schooly! A basic School Managment Sytem for tracking academic records",
+		"link": "",
+		"github": "https://github.com/Samn1ce/SMS",
+		"langs": [
+			"Tailwind",
+			"HTML",
+			"Javascript",
+			"Alpine.js",
+			"PHP",
+			"MySQL"
+		],
+		"year": "2026"
+	},
+	{
 		"img": "FINANCE.png",
 		"name": "Finance",
-		"description": "inance Dashboard project. Track your Transactions and Bills at the same instance on the web.",
+		"description": "Finance Dashboard project. Track your Transactions and Bills at the same instance on the web.",
 		"link": "https://finance-three-bay.vercel.app/",
-		"github": "",
+		"github": "https://github.com/Samn1ce/Dashboard-react",
 		"langs": ["Tailwind", "React", "Javascript"],
 		"year": "2025"
 	},
 	{
-		"id": 2,
-		"number": "02",
 		"img": "EASYBANK.png",
 		"name": "Easybank",
 		"description": "Easybank! Pure Banking Landing Page for Swift and Fast Transactions. Sign up and enjoy Easybanking.",
 		"link": "https://easybank-two-blush.vercel.app/",
-		"github": "",
+		"github": "https://github.com/Samn1ce/easybank",
 		"langs": ["Tailwind", "React", "Javascript"],
 		"year": "2024"
 	},
 	{
-		"id": 3,
-		"number": "03",
 		"img": "SHORTLY.png",
 		"name": "Shortly",
 		"description": "Hate Long Links? Fix your problem with SHORTLY. Shortens your Links for sharing access",
 		"link": "https://shorrttly.vercel.app",
-		"github": "",
+		"github": "https://github.com/Samn1ce/Shortly",
 		"langs": ["Tailwind", "Vue", "Javascript", "API"],
 		"year": "2024"
 	},
 	{
-		"id": 4,
-		"number": "04",
+		"id": 5,
+		"number": "05",
 		"img": "RPS.png",
 		"name": "Rock, Paper, Scissors",
 		"description": "Rock! Paper!! Scissors!!!",
@@ -44,13 +54,11 @@
 		"year": "2024"
 	},
 	{
-		"id": 5,
-		"number": "05",
 		"img": "MSF.png",
 		"name": "Multi Step Form",
 		"description": "Fill this Multi-step-form to get access into your gaming store. Enjoy Gaming!",
 		"link": "https://multi-step-form-six-lemon.vercel.app/",
-		"github": "",
+		"github": "https://github.com/Samn1ce/Multi-step-form",
 		"langs": ["Tailwind", "React", "Javascript"],
 		"year": "2024"
 	}

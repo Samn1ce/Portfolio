@@ -63,16 +63,17 @@ const scrollTo = (id) => {
 
 			<div class="flex flex-col sm:flex-row gap-4 mt-8">
 				<button
-					@click="scrollTo('#projects')"
-					class="px-8 py-3 rounded-full bg-[#cbf3ce] text-black font-semibold text-lg hover:bg-[#b5e0b8] transition-colors text-center shadow-lg"
+					@click="scrollTo('projects')"
+					class="px-8 py-3 border border-[#cbf3ce] text-[#cbf3ce] font-sans text-sm font-medium uppercase tracking-widest hover:bg-[#cbf3ce] hover:text-black transition-all duration-300"
 				>
-					See work
+					See Work
 				</button>
 				<a
-					href="#"
-					class="px-8 py-3 rounded-full bg-[#242426] text-white font-medium text-lg border border-white/5 hover:bg-[#2e2e30] transition-colors text-center"
+					href="https://docs.google.com/document/d/1dHoexlvo6Z3VhVfTLqmcT3yNjyaH17KwoucV63ZHwyc/edit?usp=sharing"
+					target="_blank"
+					class="px-8 py-3 border border-white/10 text-[#999] font-sans text-sm font-medium uppercase tracking-widest hover:border-white/30 hover:text-white transition-all duration-300 text-center"
 				>
-					Download CV
+					View Resume
 				</a>
 			</div>
 		</main>

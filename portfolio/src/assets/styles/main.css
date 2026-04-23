@@ -1,5 +1,9 @@
 @import 'tailwindcss';
 
+html {
+	scroll-behavior: smooth;
+}
+
 @theme {
 	--font-serif: 'Playfair Display', ui-serif, Georgia, serif;
 	--font-instrumentserif: 'Instrument Serif', ui-serif, Georgia;
@@ -41,4 +45,19 @@
 
 .animate-marquee {
 	animation: marquee 25s linear infinite;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(16px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.anim {
+	animation: fadeIn 0.9s ease forwards;
 }

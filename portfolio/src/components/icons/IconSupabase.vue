@@ -16,38 +16,6 @@
 		style="fill: none"
 		inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
 	>
-		<metadata id="metadata24">
-			<rdf:RDF>
-				<cc:Work rdf:about="">
-					<dc:format>image/svg+xml</dc:format>
-					<dc:type
-						rdf:resource="http://purl.org/dc/dcmitype/StillImage"
-					/>
-					<dc:title></dc:title>
-				</cc:Work>
-			</rdf:RDF>
-		</metadata>
-		<sodipodi:namedview
-			pagecolor="#ffffff"
-			bordercolor="#666666"
-			borderopacity="1"
-			objecttolerance="10"
-			gridtolerance="10"
-			guidetolerance="10"
-			inkscape:pageopacity="0"
-			inkscape:pageshadow="2"
-			inkscape:window-width="1687"
-			inkscape:window-height="849"
-			id="namedview22"
-			showgrid="false"
-			inkscape:zoom="2.0884956"
-			inkscape:cx="54.5"
-			inkscape:cy="56.5"
-			inkscape:window-x="70"
-			inkscape:window-y="0"
-			inkscape:window-maximized="0"
-			inkscape:current-layer="svg20"
-		/>
 		<path
 			d="m 37.41219,62.936701 c -1.634985,2.05896 -4.950068,0.93085 -4.989463,-1.69817 L 31.846665,22.786035 h 25.855406 c 4.683108,0 7.294967,5.409033 4.382927,9.07673 z"
 			id="path2"

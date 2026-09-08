@@ -13,6 +13,9 @@ import IconSql from '@/components/icons/IconSql.vue'
 import IconSupabase from '@/components/icons/IconSupabase.vue'
 import IconPostgreSql from '@/components/icons/IconPostgreSql.vue'
 import IconAlpineJs from '@/components/icons/IconAlpineJs.vue'
+import IconMongoDB from '@/components/icons/IconMongoDB.vue'
+import IconNode from '@/components/icons/IconNode.vue'
+import IconExpress from '@/components/icons/IconExpress.vue'
 
 const stacks = [
 	{
@@ -58,6 +61,18 @@ const stacks = [
 	{
 		name: 'Laravel',
 		icon: IconLaravel,
+	},
+	{
+		name: 'Node.js',
+		icon: IconNode,
+	},
+	{
+		name: 'Express.js',
+		icon: IconExpress,
+	},
+	{
+		name: 'MongoDB',
+		icon: IconMongoDB,
 	},
 	{
 		name: 'Supabase',

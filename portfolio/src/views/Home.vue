@@ -69,7 +69,7 @@ const scrollTo = (id) => {
 					See Work
 				</button>
 				<a
-					href="https://docs.google.com/document/d/1dHoexlvo6Z3VhVfTLqmcT3yNjyaH17KwoucV63ZHwyc/edit?usp=sharing"
+					href="/Babatunde_Ifeoluwa_CV.pdf"
 					target="_blank"
 					class="px-8 py-3 border border-white/10 text-[#999] font-sans text-sm font-medium uppercase tracking-widest hover:border-white/30 hover:text-white transition-all duration-300 text-center"
 				>
